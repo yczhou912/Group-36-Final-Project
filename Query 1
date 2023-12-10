@@ -1,0 +1,6 @@
+
+SELECT zipcode, COUNT(*) AS complaints_count
+FROM complaints
+WHERE date BETWEEN '2022-10-01' AND '2023-10-01'
+GROUP BY zipcode
+ORDER BY complaints_count DESC;

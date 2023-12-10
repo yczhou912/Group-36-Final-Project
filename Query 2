@@ -1,0 +1,6 @@
+
+SELECT zipcode, COUNT(*) AS trees_count
+FROM trees
+GROUP BY zipcode
+ORDER BY trees_count DESC
+LIMIT 10;

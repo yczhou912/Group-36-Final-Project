@@ -1,0 +1,4 @@
+
+SELECT tree_id AS id, species, health, status, ST_AsText(location) AS location 
+FROM trees 
+WHERE ST_DWithin(ST_Transform(location, 4326)::geography, ST_GeomFromText('POINT(-73.96253174434912 40.80737875669467)', 4326)::geography, 804.672);
