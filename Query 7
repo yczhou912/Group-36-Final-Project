@@ -1,0 +1,7 @@
+
+SELECT zipcodes.zipcode, COUNT(*) AS shooting_count
+FROM shooting
+JOIN zipcodes ON ST_Within(shooting.location, zipcodes.location)
+GROUP BY zipcodes.zipcode
+ORDER BY shooting_count DESC
+LIMIT 10
