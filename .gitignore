@@ -1,1 +1,9 @@
-
+# Ignore specific data files
+nyc_zipcodes.dbf
+nyc_zipcodes.prj
+nyc_zipcodes.sbn
+nyc_zipcodes.sbx
+nyc_zipcodes.shp
+nyc_zipcodes.shx
+nyc_zipcodes.shp.xml
+zillow_rent_data.csv
