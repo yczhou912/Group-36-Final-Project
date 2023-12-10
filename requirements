@@ -1,0 +1,11 @@
+## requirements.txt
+
+pandas
+geopandas
+requests
+sqlalchemy
+geoalchemy2
+shapely
+matplotlib
+seaborn
+subprocess
